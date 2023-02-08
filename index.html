@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoBasicToCalculate</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <p style="text-align: center; padding-top: 20px; color: gold; text-shadow: 0 15px 10px; font-size: 60px; font-weight: 900; -webkit-text-stroke: 2px black;">Hesap Makinesi</p>
+    <div class="container">
+        <div class="cal-box">
+            <form name="calculater">
+                <input id="display" style="margin-bottom: 15px;padding-right: 5px;" type="text" name="display" placeholder="0" readonly>
+            </br>
+            <input id="button" style="margin-left: 25px;" type="button" value="7" onclick="calculater.display.value +='7'">
+            <input id="button" type="button" value="8" onclick="calculater.display.value +='8'">
+            <input id="button" type="button" value="9" onclick="calculater.display.value +='9'">
+            <input id="button calcbutton" type="button" style="background-color: lightsalmon;" value="+" onclick="calculater.display.value +='+'">
+            </br>
+            <input id="button" style="margin-left: 25px;" type="button" value="4" onclick="calculater.display.value +='4'">
+            <input id="button" type="button" value="5" onclick="calculater.display.value +='5'">
+            <input id="button" type="button" value="6" onclick="calculater.display.value +='6'">
+            <input id="button calcbutton" type="button" style="background-color: lightgreen;" value="-" onclick="calculater.display.value +='-'">
+            </br>
+            <input id="button" style="margin-left: 25px;" type="button" value="1" onclick="calculater.display.value +='1'">
+            <input id="button" type="button" value="2" onclick="calculater.display.value +='2'">
+            <input id="button" type="button" value="3" onclick="calculater.display.value +='3'">
+            <input id="button calcbutton" type="button" style="background-color: lightcoral;" value="*" onclick="calculater.display.value +='*'">
+            </br>
+            <input id="button Clearbutton" style="margin-left: 25px;" type="button" value="C" onclick="calculater.display.value =''">
+            <input id="button calcbutton" type="button" value="0" onclick="calculater.display.value +='0'">
+            <input id="button calcbutton" type="button" style="background-color: darkolivegreen; color: whitesmoke;" value="=" onclick="calculater.display.value = eval(calculater.display.value)">
+            <input id="button calcbutton" type="button" style="background-color: lightseagreen;" value="/" onclick="calculater.display.value +='/'">
+            
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
